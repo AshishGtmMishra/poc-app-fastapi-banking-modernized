@@ -96,4 +96,5 @@ async def delete_item(item_id: int):
     return {"error": "Item not found"}
 
 if __name__ == "__main__":
+    print("Starting FastAPI app...")
     uvicorn.run(app, host="0.0.0.0", port=5000)
